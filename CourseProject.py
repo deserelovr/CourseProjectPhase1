@@ -38,7 +38,6 @@ print(empname, f"{hours:,.2f}", f"{hourlyrate:,.2f}" , f"{grosspay:,.2f}" , f"{t
 
 
 
-
     print()
 def PrintTotals(TotEmployees, TotHours, TotGrossPay, TotTax, TotNetPay):    
     print()
