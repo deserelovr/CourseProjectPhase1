@@ -58,11 +58,14 @@ if __name__ == "__main__":
         if (empname.upper() == "END"):
             break
         # write the code to assign to hours the return value from GetHoursWorked
-        print(hours)
+        hours = GetHoursWorked
+        print(GetHoursWorked)
         # write the code to assign to hourlyrate the return value from GetHourlyRate
-        print(hourlyrate)
+        hourlyrate = GetHourlyRate
+        print(GetHourlyRate)
         # write the code to assign to taxrate the return value from GetTaxRate
-        print(taxrate)
+        taxrate = GetTaxRate
+        print(GetTaxRate)
 
         grosspay, incometax, netpay = CalcTaxAndNetPay(hours, hourlyrate, taxrate)
         printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
