@@ -32,13 +32,14 @@ def printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay):
     print("Name:  ", empname) 
     print("Hours Worked: ", f"{hours:,.2f}")
     # write the lines of code to display hourlyrate, grosspay, taxrate, incometax and netpay with correct formatting
+    print(empname, f'{hours:,.2f}', f'{hourlyrate:,.2f}' , f"{grosspay:,.2f}" , f"{taxrate:,.2f}" , f"{incometax:,.2f}", f"{netpay:,.2f}")
     # taxrate needs to be formatted as percentage
-print(empname, f"{hours:,.2f}", f"{hourlyrate:,.2f}" , f"{grosspay:,.2f}" , f"{taxrate:,.2f}" , f"{incometax:,.2f}", f"{netpay:,.2f}")
 
 
 
 
-    print()
+
+    
 def PrintTotals(TotEmployees, TotHours, TotGrossPay, TotTax, TotNetPay):    
     print()
     print(f"Total Number Of Employees: {TotEmployees}")
@@ -57,11 +58,12 @@ if __name__ == "__main__":
         if (empname.upper() == "END"):
             break
         # write the code to assign to hours the return value from GetHoursWorked
-
+        print(hours)
         # write the code to assign to hourlyrate the return value from GetHourlyRate
-
+        print(hourlyrate)
         # write the code to assign to taxrate the return value from GetTaxRate
-        
+        print(taxrate)
+
         grosspay, incometax, netpay = CalcTaxAndNetPay(hours, hourlyrate, taxrate)
         printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
         TotEmployees += 1
